@@ -3,7 +3,7 @@ version: "3"
   jenkins:
     container_name: jenkins
     environment: 
-      -
+      - JAVA_OPTS=-Xmx4g
     image: jenkins
     ports:
       - "8080:8080"
